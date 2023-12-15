@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App🌧</title>
+    <style>
+        .card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        }
+        .author{
+            
+            font-size: 18px;
+            font-family: monospace;
+        }
+        p{
+            color: #444;
+            font-size: 18px;
+        }
+        .weather{
+        transition: all 200ms ease-in-out;
+        width: 345px;
+        padding: 8px;   
+        }
+        .weather:hover{
+        background-color: rgb(251, 249, 231);
+        }
+        h1{
+        color: #1a64d6;
+        font-size: 34px;
+        }
+        .current p{
+        font-size: 400;
+        line-height: 48px;
+        font-size: 34px;
+        color: #000;
+        }
+        .btn{
+        margin: 10px auto;
+        color: #1a64d6;  
+        padding: 16px 24px;
+        border-radius: 30px;
+        background-color: #1a64d6;
+        color: #fff;
+        transition: all 200ms ease-in-out;
+        font-size: 16px;
+        border:1px solid #1a64d6;
+        box-shadow:  0px 8px 8px 0 rgba(54, 55, 108, 0.08);
+        }
+        .btn:hover{
+        background-color: #fff;
+        color: #1a64d6;
+        cursor: pointer;
+        }
+        span{
+        padding: 10px;
+        }
+    </style>
+</head>
+<body>
+  <div class="card">
+    <div class="current">
+        <h1>  
+        🌤
+        </br>
+            Currently 21 in Tokyo
+        </h1>
+        <p>13&deg;<span>/</span><b>23&deg;</b></p>
+    </div>
+    <div class="weather">
+        <h3>🌧Tomorrow</h3>
+        <p>10&deg;<span>/</span><b>22&deg;</b></p>
+    </div>
+    <div class="weather">
+        <h3>🌥Saturday</h3>
+        <p>15&deg;<span>/</span><b>17&deg;</b></p>
+    </div>
+    <div class="weather">
+        <h3>☀️Sunday</h3>
+        <p>25&deg;<span>/</span><b>28&deg;</b></p>
+    </div>
+    <button class="btn">Change City</button>
+    <p class="author">Coded by Kinyuy kelly</p>
+  </div>  
+</body>
+</html>
