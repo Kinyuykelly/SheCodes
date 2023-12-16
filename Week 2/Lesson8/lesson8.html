@@ -74,16 +74,16 @@
         </button>
       </section>
  <script>
-    let hour = prompt("What is the current hour?");
-    if (hour < 12){
-        alert("Good morning");  
-    }
-     else if (hour > 12 && hour < 18){
-        alert("Good afternoon");  
+  function canSpeakPortuguese(){
+    let country = prompt("What country are you from?");
+    if (country.toLowerCase() == "brazil" || country.toLowerCase() == "portugal"){
+        alert("You speak Portuguese");  
     }
     else{
-        alert("Good evening");   
+        alert("Go learn Portuguese!");   
     }
+  } 
+  canSpeakPortuguese();
  </script>   
 </body>
 </html>
