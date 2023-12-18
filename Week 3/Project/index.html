@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Readster📖</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #efdecd;
+        background-image: linear-gradient(to top, #b38b6d 0%,#efdecd 100%);
+    }
+    .card{
+        width: 50%;
+        padding: 30px;
+        background-color: #171616;
+        color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 1px 10px rgba(0,0,0,0.5);
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    #image{
+        display: block;
+        width: 300px;
+        margin: 8px auto;
+        border-radius: 10px;
+
+    }
+    h1,h2{
+        text-align: center;
+        margin: 15px ;
+    }
+    .text{
+        line-height: 1.5;
+        font-size: 19px;
+        font-weight: 500;
+    }
+    a{
+    line-height: 1.5;
+    text-decoration: none;
+    color: #b38b6d;
+    padding: 4px;
+    font-size: 18px;
+    transition: all 200ms ease-in-out;
+    }
+    a:hover{
+        text-decoration: underline;
+    }
+    #btnread{
+        display: block;
+        margin: auto;
+        padding: 8px 12px;
+        background-color: #b38b6d;
+        width: 200px;
+        height: 50px;
+        color: #fff;
+        border: 10px;
+        font-size: 20px;
+        transition: all 200ms ease-in-out;
+        box-shadow: 0 1px 20px rgba(0,0,0,0.5);
+    }
+    #btnread:hover{
+        display: block;
+        margin: auto;
+        padding: 8px 12px;
+        background-color: #fff;
+        width: 200px;
+        height: 50px;
+        color: #b38b6d;
+        border: 10px;
+        font-size: 20px;
+    }
+    span{
+        font-style: italic;
+    }
+</style>
+<body>
+    <div class="card">
+        <h1>
+            I Love Reading
+            <hr>
+        </h1>  
+        </h1>
+        <h2>Books and coffee is the perfect combo for escape and comfort.</h2>
+        <img id="image" src="
+        https://s3.amazonaws.com/shecodesio-production/uploads/files/000/107/671/original/book.jpeg?1702907153" alt="book&coffee">
+        <p class="text">
+            <strong>Coffee</strong> and <strong>books</strong> have a special relationship. Both are beloved for their
+             ability to stimulate the mind and provide a sense of <span>comfort and enjoyment</span>.
+              Whether you're sitting in a cozy café or curled up on your couch, the combination 
+              of a warm cup of coffee and a good book can make for the perfect escape from the 
+              hustle and bustle of everyday life.Coffee is known for its ability to increase focus
+               and concentration. The caffeine in coffee is a stimulant that can help to improve cognitive 
+               function and boost <em>energy levels</em>. This makes it the perfect companion for reading, 
+               as it can help to keep you alert and engaged while you're diving into a story. 
+               Whether you're reading a thick tome of classic literature or a fast-paced thriller,
+                coffee can help to keep you focused and in the zone.
+        </p>
+        <a href="http://bit.ly/3RLWKJC" target="_blank">Read More</a>
+        <button id="btnread">Read a book Now</button>
+    </div>
+    <script>
+        function readBookNow(){
+            let name = prompt("What is your name?");
+            let read = prompt("How many books have you read so far?");
+            if(read >= 5){
+                alert(`Kudos👏 ${name}, You're a Readster!`);
+            }
+            else{
+                alert(`Oops☹️ ${name}, you should practice reading somemore`);
+            }
+        }
+        let readbutton = document.querySelector("#btnread");
+        readbutton.addEventListener("click", readBookNow);
+
+    </script>
+</body>
+</html>
